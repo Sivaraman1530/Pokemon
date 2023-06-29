@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  body {
+    background-color: #fceec8;
+  }
+  .cardHead {
+    display: flex;
+    justify-content: space-between;
+    color: #090635;
+    width: 50%;
+    margin: auto;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    display: flex;
+  }
+  .left-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2rem;
+    margin: auto;
+  }
+  .card {
+    width: 300px;
+    background-color: #9edef9;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  .right-content {
+    width: 50%;
+    text-align: center;
+    color: black;
+    /* position: fixed; */
+    /* top: 100px;
+    right: 10px; */
+    margin: auto;
+    margin-top: 30px;
+  }
+  .right-content img {
+    margin: 1.5rem;
+    height: 160px;
+  }
+  .right-content h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .abilities {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .abilities .group {
+    background-color: #b74555;
+    color: white;
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    margin-left: 1rem;
+  }
+  .base-stat {
+    margin-top: 2rem;
+  }
+  .infos{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 20%;
+    background-color: #9edef9;
+    margin-top: 3px;
+    border-radius: 8px;
+  }
+  .key{
+    height: 30px;
+    display: flex;
+    margin: auto;
+    width: 200px;
+    align-items: center;
+  }
+  .value{
+    height: 30px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+  }
+  .btn-group {
+    display: flex;
+  }
+  .btn-group button {
+    outline: none;
+    border: none;
+    width: 150px;
+    padding: 0.3rem 0;
+    margin: 1rem;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background-color: #b74555;
+    border-radius: 8px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search {
+    border: none;
+    border-radius: 30px;
+    height: 50px;
+    width: 40%;
+    font-size: 15px;
+    outline: none;
+    padding-left: 10px;
+    margin-top: 40vh;
+    background-color: rgb(36, 33, 33);
+    color: white;
+  }
+  .header img {
+    z-index: -1;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+  }
+  .header button {
+    height: 45px;
+    width: 70px;
+    font-size: 20px;
+    background-color: rgb(36, 33, 33);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: 40vh;
+    color: white;
+  }
+  .savedButton , .saveButton , .savedItems button {
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #9edef9;
+    margin-left: 5px;
+  }
+  .savedItems button{
+    background-color:brown;
+     margin: 10px;
+     color: white;
+  }
+  .savedPage{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .list{
+    display: flex;
+    background-color:#9edef9 ;
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+  .list div{
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+  }
+  @media only screen and (max-width: 600px) {
+    .infos{
+      width: 100%;
+      margin-left: 0%;
+    }
+    .savedButton , .saveButton{
+      font-size: 15px;
+      width: 70px;
+      margin-left: 3px;
+    }
+    .savedPage h1{
+      margin-right: 5px;
+    }
+    .list div{
+      width: 150px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 15px;
+    }
+    .container {
+      width: 90%;
+      margin: auto;
+      padding-top: 30px;
+      display: flex;
+    }
+    .left-content {
+      display: grid;
+      grid-template-columns:auto;
+      grid-gap: 2rem;
+      margin: auto;
+    }
+    .cardHead {
+      display: flex;
+      justify-content: space-between;
+      color: #090635;
+      width: 80%;
+      margin: auto;
+    }
+    .header button {
+      height: 30px;
+      width: 50px;
+      font-size: 15px;
+      background-color: rgb(36, 33, 33);
+      outline: none;
+      border: none;
+      border-radius: 10px;
+      margin-top: 40vh;
+      color: white;
+    }
+    .search {
+      border: none;
+      border-radius: 30px;
+      height: 30px;
+      width: 50%;
+      font-size: 15px;
+      outline: none;
+      padding-left: 10px;
+      margin-top: 40vh;
+      background-color: rgb(36, 33, 33);
+      color: white;
+    }
+  }
+  
